@@ -1,0 +1,11 @@
+
+Quando terminamos um projeto ou aplicação, a dúvida que fica é: onde podemos disponibiliza-lo para outras pessoas acessarem? A solução está no Deploy, que podemos considerar uma fase do ciclo de vida do software. Basicamente, é um termo usado quando vamos disponibilizar o sistema criado em um ambiente de desenvolvimento para testes ou em produção. Um desenvolvedor pode fazer o Deploy da sua aplicação na web ou em serviços como AWS. O que se deve levar em consideração na hora da escolha é o tipo de aplicações que o servidor de hospedagem suporta. Alguns exemplos de hospedagens gratuitas são:
+•	GitHub: é um serviço de hospedagem para sites estáticos de forma gratuita, onde é possível publicar sites, aplicativos etc dentro de um repositório e ainda de forma colaborativa.
+•	Zeit Now:  permite fazer o Deploy de aplicações JavaScript (Node), sites estáticos, serviços, entre outros de uma maneira muito simples na nuvem.
+•	Heroku: é uma plataforma de cloud que permite que você hospede suas aplicações em um ambiente facilmente escalável e com suporte a várias tecnologias. Ele tem um plano gratuito, que é indicado para testes, e opções pagas com mais funcionalidades e suporte.
+•	Surge.sh: plataforma que permite subir um projeto Front-end gratuitamente com poucos caracteres.
+•	Kinghost: hospedagem de sites compartilhada, computação em nuvem e serviços de servidor de nome de domínio.
+
+
+
+https://vercel.com/pi-casa-menina-mulher
