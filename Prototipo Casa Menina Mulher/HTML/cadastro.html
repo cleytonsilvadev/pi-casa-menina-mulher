@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Cadastro</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/estilo.css"> 
+    <link rel="stylesheet" href="../CSS/normalize.css"> <!--O normalize é utilizado para aumentar a compatilidade das formatações em navegadores diferentes-->
+  </head>
+  <body id="cadastro">
+    <div id="containercadastro" >
+      <header><!-- Tag HEADER é utilizada para facilitar o reconhecimento de leitores de tela ou seja deficientes visuais podem utilizar a aplicação-->
+        <article id="cadastramento" class="black-50"> <!--Tag ARTICLE faz o mesmo que a tag HEADER-->
+          <form action=""> <!-- Inicio do formulário--> <!--INPUTS E SELECTS QUE POSSUEM A TAG REQUIRED REQUER DADO OBRIGATÓRIO A SER PREENCHIDO -->
+
+            <!--Inicio da div de coleta de nome, data de nascimento, sexo e local de nascimento-->
+
+            <div class="form-group form-inline">
+                <label for="integrante">Nome:</label>
+                <input class="form-control mr-4 ml-4 text-capitalize" style="width: 320px" type="text" name="" id="usuario" placeholder="Digite o nome completo..." required>
+                <label for="nascimento">Nascimento:</label>
+                <input class="form-control mr-4 ml-4" style="width: 175px" type="date" id="nascimento" required>
+                <label for="sexo">Sexo:</label>
+                <select class="form-control mr-4 ml-4" style="width: 140px" name="" id="sexo" required>
+                <option value="">--------</option>
+                <option value="">Feminino</option>
+                <option value="">Masculino</option>
+                </select>
+                <label for="natural">Natural de:</label>
+                <input class="form-control mr-4 ml-4 text-capitalize" style="width: 150px" id="natural" placeholder="Local de nascimento" required>
+            </div><br>
+
+            <!--Final da div de coleta de nome, data de nascimento, sexo e local de nascimento-->
+
+            <!--Inicio da div de coleta de cpf, rg, estado civil e setor-->
+
+            <div class="form-group form-inline"> 
+                <label for="cpf">CPF:</label>
+                <input class="form-control mr-4 ml-4" type="text" id="cpf" style="width: 300px" placeholder="Digite o cpf no formato xxx.xxx.xxx-xx">
+                <label for="rg">RG:</label>
+                <input class="form-control mr-4 ml-4" type="text" id="rg" style="width: 240px" placeholder="Digite o rg no formato x.xxx.xxx">
+                <label for="civil">Estado Civil:</label>
+                <select class="form-control mr-4 ml-4"  style="width: 160px" name="" id="civil" required>
+                <option value="">--------</option>
+                <option value="">Casada(o)</option>
+                <option value="">Divorciada(o)</option>
+                <option value="">Solteira(o)</option> 
+                <option value="">Viuva(o)</option>
+                </select>
+                <label for="setor">Setor:</label>
+                <select class="form-control mr-4 ml-4" style="width: 155px" id="setor" required>
+                  <option value="">--------</option>
+                  <option value="">Aluna</option>
+                  <option value="">Coordenação</option>
+                  <option value="">Doador(a)</option>
+                  <option value="">Financeiro</option>
+                  <option value="">Recursos Humanos</option>
+                  <option value="">Serviços Gerais</option>
+                  <option value="">Voluntária(o)</option>
+                </select>
+            </div><br>
+
+            <!--Final da div de coleta de cpf, rg, estado civil e setor-->
+
+            <!--Inicio da div de coleta de contato, nº nis, nº sus e e-mail-->
+
+            <div class="form-group form-inline">
+              <label for="contato">Contato:</label>
+              <input class="form-control mr-4 ml-4 text-captalize" style="width: 165px" type="text" name="" id="contato" placeholder="(xx) xxxxx-xxxx" required>
+              <label for="nis">Nº NIS:</label>
+              <input class="form-control mr-4 ml-4 text-captalize" style="width: 170px" type="text" name="" id="nis" placeholder="Número do NIS" required>
+              <label for="sus">Nº SUS:</label>
+              <input class="form-control mr-4 ml-4 text-captalize" style="width: 165px" type="text" name="" id="sus" placeholder="Número do PIS" required>
+              <label for="email">E-mail:</label>
+              <input class="form-control mr-4 ml-4 text-captalize" style="width: 330px" type="email" name="" id="email" placeholder="Digite o email completo">
+            </div><br>
+
+            <!--Final da div de coleta de contato, nº nis, nº sus e e-mail-->
+
+            <!--Inicio da div de coleta de renda, etnia, ocupação e membros da familia-->
+
+            <div class="form-group form-inline"> 
+              <label for="renda">Renda:</label>
+              <select class="form-control mr-4 ml-4" style="width: 180px" id="renda" required>
+                <option value="">--------------------</option>
+                <option value="">Até 1 salário mínimo</option>
+                <option value="">Até 2 salários mínimos</option>
+                <option value="">Até 3 salários mínimos</option>
+                <option value="">Mais de 4 salários mínimos</option>
+              </select>
+              <label for="etnia">Etnia:</label>
+              <select  class="form-control mr-4 ml-4" style="width: 180px" id="renda" required>
+                <option value="">------------</option>
+                <option value="">Branca(o)</option>
+                <option value="">Indigena(o)</option>
+                <option value="">Negra(o)</option>
+                <option value="">Parda(o)</option>
+              </select>
+              <label for="ocupacao">Ocupação:</label>
+              <select class="form-control mr-4 ml-4" style="width: 180px" id="ocupacao" required>
+                <option value="">--------------------</option>
+                <option value="">Desempregada(o)</option>
+                <option value="">Empregada(o)</option>
+                <option value="">Estudante</option>
+              </select>
+                <label for="membrosfamilia">Membros na família:</label>
+                <input class="form-control mr-4 ml-4 text-captalize" style="width: 190px" type="text" name="" id="membrosfamilia" placeholder="Número de membros da familia" required>
+            </div><br>
+
+            <!--final da div de coleta de renda, etnia, ocupação e membros da familia-->
+
+            <!--Inicio da div de coleta de escolaridade, responsável e  gênero-->
+
+            <div class="form-group form-inline"> 
+                <label for="escolaridade">Escolaridade:</label>
+                <select class="form-control mr-4 ml-4" style="width: 278px" id="escolaridade" required>
+                  <option value="">-------------------------------------</option>
+                  <option value="">Educação Infantil</option>
+                  <option value="">Ensino Fundamental Incompleto</option>
+                  <option value="">Ensino Fundamental Completo</option>
+                  <option value="">Ensino Médio Incompleto</option>
+                  <option value="">Ensino Médio Completo</option>
+                  <option value="">Graduação Completa</option>
+                  <option value="">Graduação Incompleta</option>
+                  <option value="">Pós-Graduação Incompleta</option>
+                  <option value="">Pós-Graduação Completa</option>
+                  <option value="">Mestrado Incompleto</option>
+                  <option value="">Mestrado Completo</option>
+                  <option value="">Doutorado Incompleto</option>
+                  <option value="">Doutorado Completo</option>
+                </select>
+                <label for="integrante">Responsável:</label>
+                <input class="form-control mr-4 ml-4 text-capitalize" style="width: 430px" type="text" name="" id="integrante" placeholder="Nome completo da mãe ou responsável..." required>
+                <label for="genero">Gênero:</label>
+                <select class="form-control mr-4 ml-4" style="width: 140px" id="genero">
+                  <option value="">---------</option>
+                  <option value="">Cisgênero</option>
+                  <option value="">Transgênero</option>
+                  <option value="">Não-binário</option>
+                </select>
+            </div><br> 
+
+            <!--Final da div de coleta de escolaridade, responsável e  gênero-->
+
+            <!--Inicio da div de coleta de endereço nº de residência, habitação e ponto de referência-->
+
+            <div class="form-group form-inline">
+              <label for="endereco">Endereço:</label>
+              <input class="form-control mr-4 ml-4 text-capitalize" style="width: 230px" type="text" name="" id="endereco" placeholder="Endereço de residência..." required>
+              <label for="numerocasa">Nº:</label>
+              <input class="form-control mr-4 ml-4 text-capitalize" style="width: 100px" type="text" name="" id="numerocasa" placeholder="Número..." required>
+              <label for="habitacao">Habitação:</label>
+              <select class="form-control mr-4 ml-4" style="width: 180px">
+                <option value="">-----------</option>
+                <option value="">Apartamento</option>
+                <option value="">Casa de Alvenaria</option>
+                <option value="">Pau a Pique</option>
+                <option value="">Palafita</option>
+              </select>
+              <label for="pontodereferencia">Ponto de Referência:</label>
+              <input class="form-control mr-4 ml-4 text-captalize" style="width: 212px" type="text" name="" id="pontodereferencia" placeholder="Ponto de referência..." required>
+            </div><br>
+
+            <!--Final da div de coleta de endereço nº de residência, habitação e ponto de referência-->
+
+            <!-- Inicio da div de coleta de programa social, religião e nº de emergência-->
+
+            <div class="form-group form-inline">
+              <label for="programasocial">Programa Social:</label>
+              <select class="form-control mr-4 ml-4" style="width: 180px" id="programasocial" required>
+                <option value="">-------------</option>
+                <option value="">Auxilio Brasil</option>
+                <option value="">Bolsa Família</option>
+                <option value="">Bolsa Verde</option>
+                <option value="">Carteira de Idoso</option>
+                <option value="">Tarifa Social</option>
+              </select>
+              <label for="religiao">Religião:</label>
+              <input class="form-control mr-4 ml-4 text-captalize" style="width: 300px" type="text" name="" id="membrosfamilia" placeholder="Religião que faz parte" required>
+              <label for="emergencia">Nº de Emergência:</label>
+              <input class="form-control mr-4 ml-4 text-captalize" style="width: 302px" type="text" name="" id="emergencia" placeholder="Digite no formato (xx) xxxxx-xxxx" required>
+            </div><br>
+
+            <!-- Final da div de coleta de programa social, religião e nº de emergência-->
+
+            <!--Inicio da div de coleta se deficiencia-->
+
+            <div class="form-group form-inline">
+              <label for="deficiencia">Possui Deficiência:</label>
+              <select class="form-control mr-4 ml-4" name="" id="deficiencia" required>
+                <option value="">---</option>
+                <option value="">Sim</option>
+                <option value="">Não</option>
+              </select>
+              <label for="deficiencia1">Qual:</label>
+              <input class="form-control mr-4 ml-4 text-capitalize" style="width: 300px;" type="text" id="deficiencia1" placeholder="Em caso de sim, escreva">
+            </div><br>
+
+            <!--Final da div de coleta se deficiencia-->
+
+            <!--Inicio da div de anexo de arquivos de ficha escolar-->
+
+            <div class="custom-file">
+              <input class="custom-file-" style="width: 300px" type="file" id="arquivo" required>
+              <label class="custom-file-label" style="width: 315px;" for="arquivo" required>Envie o anexo da ficha escolar</label>
+            </div><br><br><br>
+
+            <!--Final da div de anexo de arquivos de ficha escolar-->
+
+            <!--Inicio da div do botão de cadastro-->
+
+            <div class="form-group form-inline botao">
+              <label for="submit"></label>
+              <input class="btn btn-primary btn-lg btn-outline" style="width: 90%;" type="submit" value="Cadastrar">
+            </div><br>
+
+            <!--Final da div do botão de cadastro-->
+
+          </form>
+        </article>
+      </header>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
